@@ -22,7 +22,7 @@ npm run serve
 - clone the project
 
 ```
-git clone git@rendu-git.etna-alternance.net:module-7997/activity-43897/group-873583
+git clone git@github.com:Alexxxx35/VdmDBProject.git
 ```
 
 - postgres installation (shell installation)
