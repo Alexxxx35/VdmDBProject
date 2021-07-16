@@ -1,0 +1,52 @@
+SELECT COUNT(*) 
+FROM Spectator
+WHERE spectator_civ = 'Mademoiselle' || spectator_civ = 'Madame'
+
+SELECT COUNT(*) 
+FROM Spectator
+WHERE spectator_age < 18
+
+SELECT COUNT(*) 
+FROM Spectator
+WHERE spectator_age >= 18 AND spectator_age < 25
+
+SELECT COUNT(*) 
+FROM Spectator
+WHERE spectator_age >= 25 AND spectator_age < 39
+
+SELECT COUNT(*) 
+FROM Spectator
+WHERE spectator_age >= 40 AND spectator_age < 54
+
+SELECT COUNT(*) 
+FROM Spectator
+WHERE spectator_age >= 55
+
+SELECT COUNT(*)
+FROM Booking,Game
+WHERE Booking.game_id = Game.game_id AND Game.game_vr = true
+
+SELECT COUNT(*)
+FROM Booking,Game
+WHERE Booking.game_id = Game.game_id AND Game.game_vr = false
+
+
+SELECT game_timestamp,COUNT(*)
+FROM Booking,Game
+WHERE Booking.game_id = Game.game_id 
+GROUP BY(game_timestamp)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
