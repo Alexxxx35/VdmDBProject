@@ -1,5 +1,9 @@
 ## Project Get Started
 
+- Install dependencies (in Webapp folder)
+```
+npm install 
+``` 
 - Back-end and api starting (in Webapp folder)
 ``` 
 npm run start
